@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tourStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>GHUMI</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#">GHUMI</a></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">GHUMI</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                <li><a href="./tour.html">Tours</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Explore Popular Places in India</h1>
+    </header>
+    <main class="cards">
+        <div class="container">
+            <!-- 20 Tour Cards -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/TajMahal1.jpg" alt="Taj Mahal 1" onclick="showDetails(this)">
+                    <img src="./images/tours/TajMahal2.jpg" alt="Taj Mahal 2" onclick="showDetails(this)">
+                    <img src="./images/tours/TajMahal3.jpg" alt="Taj Mahal 3" onclick="showDetails(this)">
+                </div>
+                <h3>Taj Mahal, Agra</h3>
+                <div class="details">
+                    <p>One of the Seven Wonders of the World, known for its stunning marble architecture.</p>
+                    <p><strong>Price:</strong> ₹1000 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Oberoi Amarvilas, ITC Mughal</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/Goldentemple1.jpg" alt="Golden Temple 1" onclick="showDetails(this)">
+                    <img src="./images/tours/Goldentemple2.jpg" alt="Golden Temple 2" onclick="showDetails(this)">
+                    <img src="./images/tours/Goldentemple3.jpg" alt="Golden Temple 3" onclick="showDetails(this)">
+                </div>
+                <h3>Golden Temple, Amritsar</h3>
+                <div class="details">
+                    <p>The holiest gurdwara of Sikhism, known for its golden dome and serene ambiance.</p>
+                    <p><strong>Price:</strong> Free entry</p>
+                    <p><strong>Nearby Hotels:</strong> Hyatt Regency, Ramada Amritsar</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images//tours/Hawamahal1.jpg" alt="Hawa Mahal 1" onclick="showDetails(this)">
+                    <img src="./images/tours/Hawamhal2.jpg" alt="Hawa Mahal 2" onclick="showDetails(this)">
+                    <img src="./images/tours/Hawamahal3.jpg" alt="Hawa Mahal 3" onclick="showDetails(this)">
+                </div>
+                <h3>Hawa Mahal, Jaipur</h3>
+                <div class="details">
+                    <p>A unique palace with a distinctive honeycomb structure, known as the "Palace of Winds".</p>
+                    <p><strong>Price:</strong> ₹200 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Jai Mahal Palace, Trident Jaipur</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/Mysorepalace1.jpg" alt="Mysore Palace 1" onclick="showDetails(this)">
+                    <img src="./images/tours/Mysorepalce2.jpg" alt="Mysore Palace 2" onclick="showDetails(this)">
+                    <img src="./images/tours/Mysorepalace3.jpg" alt="Mysore Palace 3" onclick="showDetails(this)">
+                </div>
+                <h3>Mysore Palace, Mysore</h3>
+                <div class="details">
+                    <p>A historical palace known for its grand architecture and royal heritage.</p>
+                    <p><strong>Price:</strong> ₹70 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Radisson Blu, Royal Orchid Metropole</p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/marinedrive1.jpg" alt="Marine Drive 1" onclick="showDetails(this)">
+                    <img src="./images/tours/marinedrive2.jpg" alt="Marine Drive 2" onclick="showDetails(this)">
+                    <img src="./images/tours/marinedrive3.jpg" alt="Marine Drive 3" onclick="showDetails(this)">
+                </div>
+                <h3>Marine Drive, Mumbai</h3>
+                <div class="details">
+                    <p>A picturesque coastal road known as the "Queen's Necklace" for its stunning night view.</p>
+                    <p><strong>Price:</strong> Free entry</p>
+                    <p><strong>Nearby Hotels:</strong> The Taj Mahal Palace, Trident Nariman Point</p>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/keralabackwaters1.jpg" alt="Kerala Backwaters 1" onclick="showDetails(this)">
+                    <img src="./images/tours/keralabackwaters2.jpg" alt="Kerala Backwaters 2" onclick="showDetails(this)">
+                    <img src="./images/tours/keralabackwaters3.jpg" alt="Kerala Backwaters 3" onclick="showDetails(this)">
+                </div>
+                <h3>Kerala Backwaters</h3>
+                <div class="details">
+                    <p>Serene waterways and houseboats offering a unique way to explore Kerala.</p>
+                    <p><strong>Price:</strong> ₹1500 per boat ride</p>
+                    <p><strong>Nearby Hotels:</strong> Kumarakom Lake Resort, Houseboat stays</p>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/kjtemple1.jpg" alt="Khajuraho Temples 1" onclick="showDetails(this)">
+                    <img src="./images/tours/kjtemple2.jpg" alt="Khajuraho Temples 2" onclick="showDetails(this)">
+                    <img src="./images/tours/kjtemple3.jpg" alt="Khajuraho Temples 3" onclick="showDetails(this)">
+                </div>
+                <h3>Khajuraho Temples, Madhya Pradesh</h3>
+                <div class="details">
+                    <p>Famous for their erotic sculptures and stunning architecture.</p>
+                    <p><strong>Price:</strong> ₹600 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Lalit Temple View, Radisson Jass</p>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/charminar1.jpg" alt="Charminar 1" onclick="showDetails(this)">
+                    <img src="./images/tours/charminar2.jpg" alt="Charminar 2" onclick="showDetails(this)">
+                    <img src="./images/tours/charminar3.jpg" alt="Charminar 3" onclick="showDetails(this)">
+                </div>
+                <h3>Charminar, Hyderabad</h3>
+                <div class="details">
+                    <p>An iconic mosque known for its four grand minarets and Indo-Islamic architecture.</p>
+                    <p><strong>Price:</strong> ₹50 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Taj Krishna, ITC Kakatiya</p>
+                </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/redfort1.jpg" alt="Red Fort 1" onclick="showDetails(this)">
+                    <img src="./images/tours/redfort1.jpg" alt="Red Fort 2" onclick="showDetails(this)">
+                    <img src="./images/tours/redfort1.jpg" alt="Red Fort 3" onclick="showDetails(this)">
+                </div>
+                <h3>Red Fort, Delhi</h3>
+                <div class="details">
+                    <p>A historic fort that served as the main residence of Mughal emperors.</p>
+                    <p><strong>Price:</strong> ₹500 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> The Imperial, Le Meridien</p>
+                </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/sundarban1.jpg" alt="Sundarbans 1" onclick="showDetails(this)">
+                    <img src="./images/tours/sundarban2.jpg" alt="Sundarbans 2" onclick="showDetails(this)">
+                    <img src="./images/tours/sundar3.jpg" alt="Sundarbans 3" onclick="showDetails(this)">
+                </div>
+                <h3>Sundarbans, West Bengal</h3>
+                <div class="details">
+                    <p>Largest mangrove forest in the world, home to the Royal Bengal Tiger.</p>
+                    <p><strong>Price:</strong> ₹200 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Sundarban Tiger Camp, Sundarban Jungle Camp</p>
+                </div>
+            </div>
+            <!-- Card 11 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/andmanbeach1.jpg" alt="Andaman Beaches 1" onclick="showDetails(this)">
+                    <img src="./images/tours/andmanbeach2.jpg" alt="Andaman Beaches 2" onclick="showDetails(this)">
+                    <img src="./images/tours/andmanbeach3.jpg" alt="Andaman Beaches 3" onclick="showDetails(this)">
+                </div>
+                <h3>Andaman Beaches</h3>
+                <div class="details">
+                    <p>Pristine beaches known for their crystal-clear waters and coral reefs.</p>
+                    <p><strong>Price:</strong> Free entry</p>
+                    <p><strong>Nearby Hotels:</strong> Taj Exotica, SeaShell Resort</p>
+                </div>
+            </div>
+            <!-- Card 12 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/LakshadweepIslands1.jpg" alt="Lakshadweep 1" onclick="showDetails(this)">
+                    <img src="./images/tours/LakshadweepIslands2.jpg" alt="Lakshadweep 2" onclick="showDetails(this)">
+                    <img src="./images/tours/LakshadweepIslands3.jpg" alt="Lakshadweep 3" onclick="showDetails(this)">
+                </div>
+                <h3>Lakshadweep Islands</h3>
+                <div class="details">
+                    <p>A group of islands known for their beautiful lagoons and diving spots.</p>
+                    <p><strong>Price:</strong> ₹500 per permit</p>
+                    <p><strong>Nearby Hotels:</strong> Agatti Island Beach Resort, Bangaram Island Resort</p>
+                </div>
+            </div>
+            <!-- Card 13 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/ranofkutch1.jpg" alt="Rann of Kutch 1" onclick="showDetails(this)">
+                    <img src="./images/tours/ranofkutch2.jpg" alt="Rann of Kutch 2" onclick="showDetails(this)">
+                    <img src="./images/tours/ranofkutch3.jpg" alt="Rann of Kutch 3" onclick="showDetails(this)">
+                </div>
+                <h3>Rann of Kutch, Gujarat</h3>
+                <div class="details">
+                    <p>The vast white salt desert, famous for the Rann Utsav and cultural heritage.</p>
+                    <p><strong>Price:</strong> ₹100 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Rann Riders, Shaam-e-Sarhad Village Resort</p>
+                </div>
+            </div>
+            <!-- Card 14 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/UBP1.jpg" alt="Umaid Bhawan 1" onclick="showDetails(this)">
+                    <img src="./images/tours/UBP2.jpg" alt="Umaid Bhawan 2" onclick="showDetails(this)">
+                    <img src="./images/tours/UBP3.jpg" alt="Umaid Bhawan 3" onclick="showDetails(this)">
+                </div>
+                <h3>Umaid Bhawan Palace, Jodhpur</h3>
+                <div class="details">
+                    <p>A grand palace showcasing royal history, part of which is a luxury hotel.</p>
+                    <p><strong>Price:</strong> ₹300 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Umaid Bhawan Palace Hotel, Ajit Bhawan</p>
+                </div>
+            </div>
+            <!-- Card 15 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/Jaislmerfort1.jpg" alt="Jaisalmer Fort 1" onclick="showDetails(this)">
+                    <img src="./images/tours/Jaislmerfort2.jpg" alt="Jaisalmer Fort 2" onclick="showDetails(this)">
+                    <img src="./images/tours/Jaislmerfort3.jpg" alt="Jaisalmer Fort 3" onclick="showDetails(this)">
+                </div>
+                <h3>Jaisalmer Fort, Rajasthan</h3>
+                <div class="details">
+                    <p>Known as the "Golden Fort", it is one of the largest fully preserved fortified cities in the world.</p>
+                    <p><strong>Price:</strong> ₹250 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Suryagarh, Desert Tulip Hotel</p>
+                </div>
+            </div>
+            <!-- Card 16 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/Konarktemple1.jpg" alt="Konark Sun Temple 1" onclick="showDetails(this)">
+                    <img src="./images/tours/Konarktemple2.jpg" alt="Konark Sun Temple 2" onclick="showDetails(this)">
+                    <img src="./images/tours/Konarktemple3.jpg" alt="Konark Sun Temple 3" onclick="showDetails(this)">
+                </div>
+                <h3>Konark Sun Temple, Odisha</h3>
+                <div class="details">
+                    <p>A 13th-century temple dedicated to the sun god, known for its unique chariot-like structure.</p>
+                    <p><strong>Price:</strong> ₹600 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Lotus Eco Resort, Mayfair Waves</p>
+                </div>
+            </div>
+            <!-- Card 17 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/ajantacaves1.jpg" alt="Ajanta Caves 1" onclick="showDetails(this)">
+                    <img src="./images/tours/ajantacaves2.jpg" alt="Ajanta Caves 2" onclick="showDetails(this)">
+                    <img src="./images/tours/ajantacaves3.jpg" alt="Ajanta Caves 3" onclick="showDetails(this)">
+                </div>
+                <h3>Ajanta Caves, Maharashtra</h3>
+                <div class="details">
+                    <p>Ancient rock-cut caves featuring Buddhist art and architecture from the 2nd century BCE.</p>
+                    <p><strong>Price:</strong> ₹600 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Ajanta T Junction Hotel, Kailas Hotel</p>
+                </div>
+            </div>
+            <!-- Card 18 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/brihadeeswarartemple1.jpg" alt="Brihadeeswarar Temple 1" onclick="showDetails(this)">
+                    <img src="./images/tours/brihadeeswarartemple2.jpg" alt="Brihadeeswarar Temple 2" onclick="showDetails(this)">
+                    <img src="./images/tours/brihadeeswarartemple3.jpg" alt="Brihadeeswarar Temple 3" onclick="showDetails(this)">
+                </div>
+                <h3>Brihadeeswarar Temple, Tamil Nadu</h3>
+                <div class="details">
+                    <p>A UNESCO World Heritage site, known for its massive dome and intricate carvings.</p>
+                    <p><strong>Price:</strong> ₹500 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Ideal River View Resort, Svatma Hotel</p>
+                </div>
+            </div>
+            <!-- Card 19 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/qutubminar1.jpg" alt="Qutub Minar 1" onclick="showDetails(this)">
+                    <img src="./images/tours/qutubminar2.jpg" alt="Qutub Minar 2" onclick="showDetails(this)">
+                    <img src="./images/tours/qutubminar3.jpg" alt="Qutub Minar 3" onclick="showDetails(this)">
+                </div>
+                <h3>Qutub Minar, Delhi</h3>
+                <div class="details">
+                    <p>The tallest brick minaret in the world, an important symbol of India's medieval history.</p>
+                    <p><strong>Price:</strong> ₹500 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> The Oberoi, The Ashok</p>
+                </div>
+            </div>
+            <!-- Card 20 -->
+            <div class="card">
+                <div class="image-gallery">
+                    <img src="./images/tours/elloracaves1.jpg" alt="Ellora Caves 1" onclick="showDetails(this)">
+                    <img src="./images/tours/elloracaves2.jpg" alt="Ellora Caves 2" onclick="showDetails(this)">
+                    <img src="./images/tours/elloracaves3.jpg" alt="Ellora Caves 3" onclick="showDetails(this)">
+                </div>
+                <h3>Ellora Caves, Maharashtra</h3>
+                <div class="details">
+                    <p>A UNESCO World Heritage site known for its monumental rock-cut temples and artwork.</p>
+                    <p><strong>Price:</strong> ₹600 per entry</p>
+                    <p><strong>Nearby Hotels:</strong> Hotel Kailas, Ellora Heritage Resort</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
